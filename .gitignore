@@ -1,0 +1,9 @@
+simulation/spy_data_utf8.jsonl
+ITCH DATA . PROVIDER . PARSER/data/01302020.NASDAQ_ITCH50
+ITCH DATA . PROVIDER . PARSER/01302020.NASDAQ_ITCH50.gz
+simulation/marketevents.jsonl
+ITCH DATA . PROVIDER . PARSER/cmd/market_events_old.jsonl
+ITCH DATA . PROVIDER . PARSER/go_log.txt
+
+# simulation/__pycache__/new_matching_engine_V7.cpython-312.pyc
+# simulation/__pycache__/agents.cpython-312.pyc
