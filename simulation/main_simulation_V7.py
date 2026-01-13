@@ -64,8 +64,8 @@ def log_best_bid_ask_to_file():
         if data:
             best_bid, bid_qty, best_ask, ask_qty = data
             f.write(
-                f"BEST ASK: {best_ask:>8}  --  {ask_qty} shares\n"
-                f"BEST BID: {best_bid:>8}  --  {bid_qty} shares\n"
+                f"BEST ASK: {best_ask/10000:>8}  --  {ask_qty} shares\n"
+                f"BEST BID: {best_bid/10000:>8}  --  {bid_qty} shares\n"
                 f"{'-'*35}\n"
             )
         else:
@@ -206,7 +206,7 @@ try:
                 # if old_oid not in order_book.orders_by_id: // this thing is already in replace 
 
                 # payload["price"] is new price and payload["shares"] is new qty .
-                order_book.replace_order(old_oid, new_oid, payload["Price"]/10000, payload["Shares"], current_sim_time_ns)
+                order_book.replace_order(old_oid, new_oid, payload["Price"], payload["Shares"], current_sim_time_ns)
                 log_best_bid_ask_to_file()
 
 
